@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #261b18;
+    --brown-50: #fdf8f6;
+    --brown-100: #f2e8e5;
+    --brown-200: #eaddd7;
+    --brown-300: #e0cec7;
+    --brown-400: #d2bab0;
+    --brown-500: #bfa094;
+    --brown-600: #a18072;
+    --brown-700: #977669;
+    --brown-800: #846358;
+    --brown-900: #43302b;
+    --brown-950: #261b18;
+}
+
+@layer base {
+    body {
+        @apply bg-background text-foreground antialiased;
+        background-image: radial-gradient(circle at 1px 1px, var(--brown-100) 1px, transparent 0);
+        background-size: 40px 40px;
+    }
+}
+
+@layer components {
+    .premium-gradient {
+        background: linear-gradient(135deg, #ffffff 0%, var(--brown-50) 50%, var(--brown-100) 100%);
+    }
+
+    .glass-card {
+        @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-xl;
+    }
+
+    .btn-premium {
+        @apply px-6 py-3 rounded-full bg-brown-900 text-white font-medium transition-all duration-300 hover:bg-brown-800 hover:scale-105 active:scale-95 shadow-lg hover:shadow-brown-200;
+    }
+}
