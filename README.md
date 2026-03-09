@@ -40,7 +40,7 @@ A minimalist, high-performance professional portfolio website built with modern 
    ```
 
 4. **View the site:**
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+   Open https://portfolio-website-three-azure-68.vercel.app/ in your browser.
 
 ## 📦 Deployment
 
